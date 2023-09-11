@@ -767,7 +767,7 @@ const Users = ({ users }) => {
                     <i className="bx bx-plus" />
                   </a>
                   <a
-                    href="/portfolio-details.html"
+                    href="portfolio-details.html"
                     className="details-link"
                     title="More Details">
                     <i className="bx bx-link" />
@@ -806,16 +806,16 @@ const Users = ({ users }) => {
                       quasi
                     </p>
                     <div className="social">
-                      <a href="">
+                      <a href="/">
                         <i className="ri-twitter-fill" />
                       </a>
-                      <a href="">
+                      <a href="/">
                         <i className="ri-facebook-fill" />
                       </a>
-                      <a href="">
+                      <a href="/">
                         <i className="ri-instagram-fill" />
                       </a>
-                      <a href="">
+                      <a href="/">
                         {" "}
                         <i className="ri-linkedin-box-fill" />{" "}
                       </a>
@@ -843,16 +843,16 @@ const Users = ({ users }) => {
                       para
                     </p>
                     <div className="social">
-                      <a href="">
+                      <a href="/">
                         <i className="ri-twitter-fill" />
                       </a>
-                      <a href="">
+                      <a href="/">
                         <i className="ri-facebook-fill" />
                       </a>
-                      <a href="">
+                      <a href="/">
                         <i className="ri-instagram-fill" />
                       </a>
-                      <a href="">
+                      <a href="/">
                         {" "}
                         <i className="ri-linkedin-box-fill" />{" "}
                       </a>
@@ -880,16 +880,16 @@ const Users = ({ users }) => {
                       quia
                     </p>
                     <div className="social">
-                      <a href="">
+                      <a href="/">
                         <i className="ri-twitter-fill" />
                       </a>
-                      <a href="">
+                      <a href="/">
                         <i className="ri-facebook-fill" />
                       </a>
-                      <a href="">
+                      <a href="/">
                         <i className="ri-instagram-fill" />
                       </a>
-                      <a href="">
+                      <a href="/">
                         {" "}
                         <i className="ri-linkedin-box-fill" />{" "}
                       </a>
@@ -917,16 +917,16 @@ const Users = ({ users }) => {
                       accusamus
                     </p>
                     <div className="social">
-                      <a href="">
+                      <a href="/">
                         <i className="ri-twitter-fill" />
                       </a>
-                      <a href="">
+                      <a href="/">
                         <i className="ri-facebook-fill" />
                       </a>
-                      <a href="">
+                      <a href="/">
                         <i className="ri-instagram-fill" />
                       </a>
-                      <a href="">
+                      <a href="/">
                         {" "}
                         <i className="ri-linkedin-box-fill" />{" "}
                       </a>

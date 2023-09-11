@@ -22,7 +22,7 @@ const Users = ({ users }) => {
               <li>
                 <a
                   className="nav-link scrollto"
-                  href="https://react-cloudflare-pages-e3c.pages.dev//appuser">
+                  href="https://react-cloudflare-pages-e3c.pages.dev/appuser">
                   About
                 </a>
               </li>

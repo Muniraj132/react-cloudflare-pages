@@ -2,7 +2,7 @@ const Users = ({ users }) => {
   return (
     <div className="users">
       <center>
-        <h1>Application Users</h1>
+        <h1>Application</h1>
       </center>
       {Array.isArray(users) &&
         users.map((user) => (

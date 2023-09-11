@@ -1067,7 +1067,7 @@ const Users = ({ users }) => {
                 <li data-aos="fade-up" data-aos-delay={100}>
                   <i className="bx bx-help-circle icon-help" />{" "}
                   <a
-                    href=""
+                    href="/"
                     data-bs-toggle="collapse"
                     className="collapse"
                     data-bs-target="#faq-list-1">
@@ -1090,7 +1090,7 @@ const Users = ({ users }) => {
                 <li data-aos="fade-up" data-aos-delay={200}>
                   <i className="bx bx-help-circle icon-help" />{" "}
                   <a
-                    href=""
+                    href="/"
                     data-bs-toggle="collapse"
                     data-bs-target="#faq-list-2"
                     className="collapsed">
@@ -1115,7 +1115,7 @@ const Users = ({ users }) => {
                 <li data-aos="fade-up" data-aos-delay={300}>
                   <i className="bx bx-help-circle icon-help" />{" "}
                   <a
-                    href=""
+                    href="/"
                     data-bs-toggle="collapse"
                     data-bs-target="#faq-list-3"
                     className="collapsed">
@@ -1141,7 +1141,7 @@ const Users = ({ users }) => {
                   <i className="bx bx-help-circle icon-help" />{" "}
                   <a
                     data-bs-toggle="collapse"
-                    href=""
+                    href="/"
                     data-bs-target="#faq-list-4"
                     className="collapsed">
                     Tempus quam pellentesque nec nam aliquam sem et tortor
@@ -1164,7 +1164,7 @@ const Users = ({ users }) => {
                 <li data-aos="fade-up" data-aos-delay={500}>
                   <i className="bx bx-help-circle icon-help" />{" "}
                   <a
-                    href=""
+                    href="/"
                     data-bs-toggle="collapse"
                     data-bs-target="#faq-list-5"
                     className="collapsed">

@@ -246,6 +246,7 @@ const Users = ({ users }) => {
                     <li>
                       <a
                         data-bs-toggle="collapse"
+                        href="/"
                         className="collapse"
                         data-bs-target="#accordion-list-1">
                         <span>01</span> Non consectetur a erat nam at lectus
@@ -268,6 +269,7 @@ const Users = ({ users }) => {
                     <li>
                       <a
                         data-bs-toggle="collapse"
+                        href="/"
                         data-bs-target="#accordion-list-2"
                         className="collapsed">
                         <span>02</span> Feugiat scelerisque varius morbi enim
@@ -290,6 +292,7 @@ const Users = ({ users }) => {
                     </li>
                     <li>
                       <a
+                        href="/"
                         data-bs-toggle="collapse"
                         data-bs-target="#accordion-list-3"
                         className="collapsed">

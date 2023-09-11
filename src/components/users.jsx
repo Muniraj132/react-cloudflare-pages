@@ -130,7 +130,7 @@ const Users = ({ users }) => {
               data-aos="zoom-in"
               data-aos-delay={200}>
               <img
-                src="%PUBLIC_URL%/assets/img/hero-img.png"
+                src="/assets/img/hero-img.png"
                 className="img-fluid animated"
                 alt=""
               />

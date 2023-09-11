@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   render() {
-    return <Users users={this.state.users} />;
+    return <Users />;
   }
 }
 

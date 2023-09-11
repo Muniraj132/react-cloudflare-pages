@@ -923,7 +923,7 @@ const Users = ({ users }) => {
                       <a href>
                         <i className="ri-facebook-fill" />
                       </a>
-                      <a href>
+                      <a href="">
                         <i className="ri-instagram-fill" />
                       </a>
                       <a href>
@@ -975,7 +975,7 @@ const Users = ({ users }) => {
                       <span>Massa ultricies mi quis hendrerit</span>
                     </li>
                   </ul>
-                  <a href="" className="buy-btn">
+                  <a href="/" className="buy-btn">
                     Get Started
                   </a>
                 </div>
@@ -1009,7 +1009,7 @@ const Users = ({ users }) => {
                       hendrerit
                     </li>
                   </ul>
-                  <a href="" className="buy-btn">
+                  <a href="/" className="buy-btn">
                     Get Started
                   </a>
                 </div>
@@ -1043,7 +1043,7 @@ const Users = ({ users }) => {
                       hendrerit
                     </li>
                   </ul>
-                  <a href="" className="buy-btn">
+                  <a href="/" className="buy-btn">
                     Get Started
                   </a>
                 </div>
@@ -1141,7 +1141,7 @@ const Users = ({ users }) => {
                   <i className="bx bx-help-circle icon-help" />{" "}
                   <a
                     data-bs-toggle="collapse"
-                    href="/"
+                    href=""
                     data-bs-target="#faq-list-4"
                     className="collapsed">
                     Tempus quam pellentesque nec nam aliquam sem et tortor

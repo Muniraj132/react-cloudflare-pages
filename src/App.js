@@ -1,6 +1,6 @@
 import { Component } from "react";
 import Users from "./components/users";
-
+import Appuser from "./components/usersexamplpe";
 class App extends Component {
   state = {
     users: [],
@@ -16,7 +16,8 @@ class App extends Component {
   }
 
   render() {
-    return <Users />;
+    // return <Users />;
+    return <Appuser />;
   }
 }
 

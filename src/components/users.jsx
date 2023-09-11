@@ -4,86 +4,93 @@ const Users = ({ users }) => {
       <header id="header" className="fixed-top ">
         <div className="container d-flex align-items-center">
           <h1 className="logo me-auto">
-            <a href="index.html">Arsha</a>
+            <a href="https://react-cloudflare-pages-e3c.pages.dev/index.html">
+              Arsha
+            </a>
           </h1>
           {/* Uncomment below if you prefer to use an image logo */}
           {/* <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>*/}
           <nav id="navbar" className="navbar">
             <ul>
               <li>
-                <a className="nav-link scrollto active" href="#hero">
+                <a
+                  className="nav-link scrollto active"
+                  href="https://react-cloudflare-pages-e3c.pages.dev/#hero">
                   Home
                 </a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#about">
+                <a
+                  className="nav-link scrollto"
+                  href="https://react-cloudflare-pages-e3c.pages.dev/#about">
                   About
                 </a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#services">
+                <a
+                  className="nav-link scrollto"
+                  href="https://react-cloudflare-pages-e3c.pages.dev/#services">
                   Services
                 </a>
               </li>
               <li>
-                <a className="nav-link   scrollto" href="#portfolio">
+                <a
+                  className="nav-link   scrollto"
+                  href="https://react-cloudflare-pages-e3c.pages.dev/#portfolio">
                   Portfolio
                 </a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#team">
+                <a
+                  className="nav-link scrollto"
+                  href="https://react-cloudflare-pages-e3c.pages.dev/#team">
                   Team
                 </a>
               </li>
               <li className="dropdown">
-                <a href="#">
+                <a href="https://react-cloudflare-pages-e3c.pages.dev/">
                   <span>Drop Down</span> <i className="bi bi-chevron-down" />
                 </a>
                 <ul>
                   <li>
-                    <a href="#">Drop Down 1</a>
+                    <a href="https://react-cloudflare-pages-e3c.pages.dev/">
+                      Drop Down 1
+                    </a>
                   </li>
                   <li className="dropdown">
-                    <a href="#">
+                    <a href="https://react-cloudflare-pages-e3c.pages.dev/#">
                       <span>Deep Drop Down</span>{" "}
                       <i className="bi bi-chevron-right" />
                     </a>
-                    <ul>
-                      <li>
-                        <a href="#">Deep Drop Down 1</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 2</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 3</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 4</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 5</a>
-                      </li>
-                    </ul>
                   </li>
                   <li>
-                    <a href="#">Drop Down 2</a>
+                    <a href="https://react-cloudflare-pages-e3c.pages.dev/">
+                      Drop Down 2
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Drop Down 3</a>
+                    <a href="https://react-cloudflare-pages-e3c.pages.dev/">
+                      Drop Down 3
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Drop Down 4</a>
+                    <a href="https://react-cloudflare-pages-e3c.pages.dev/">
+                      Drop Down 4
+                    </a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#contact">
+                <a
+                  className="nav-link scrollto"
+                  href="https://react-cloudflare-pages-e3c.pages.dev/#contact">
                   Contact
                 </a>
               </li>
               <li>
-                <a className="getstarted scrollto" href="#about">
+                <a
+                  className="getstarted scrollto"
+                  href="https://react-cloudflare-pages-e3c.pages.dev/#about">
                   Get Started
                 </a>
               </li>
@@ -105,7 +112,9 @@ const Users = ({ users }) => {
                 We are team of talented designers making websites with Bootstrap
               </h2>
               <div className="d-flex justify-content-center justify-content-lg-start">
-                <a href="#about" className="btn-get-started scrollto">
+                <a
+                  href="https://react-cloudflare-pages-e3c.pages.dev/#about"
+                  className="btn-get-started scrollto">
                   Get Started
                 </a>
                 <a
@@ -121,7 +130,7 @@ const Users = ({ users }) => {
               data-aos="zoom-in"
               data-aos-delay={200}>
               <img
-                src="assets/img/hero-img.png"
+                src="%PUBLIC_URL%/assets/img/hero-img.png"
                 className="img-fluid animated"
                 alt=""
               />

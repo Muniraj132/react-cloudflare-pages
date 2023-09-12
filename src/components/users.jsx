@@ -977,7 +977,7 @@ const Users = ({ users }) => {
                 <h4>Useful Links</h4>
                 <ul>
                   <li>
-                    <i className="bx bx-chevron-right" /> <a href="#">Home</a>
+                    <i className="bx bx-chevron-right" /> <a href="/">Home</a>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right" />{" "}

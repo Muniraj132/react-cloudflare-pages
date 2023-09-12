@@ -981,19 +981,19 @@ const Users = ({ users }) => {
                   </li>
                   <li>
                     <i className="bx bx-chevron-right" />{" "}
-                    <a href="">About us</a>
+                    <a href="/">About us</a>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right" />{" "}
-                    <a href="">Services</a>
+                    <a href="/">Services</a>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right" />{" "}
-                    <a href="">Terms of service</a>
+                    <a href="/">Terms of service</a>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right" />{" "}
-                    <a href="">Privacy policy</a>
+                    <a href="/">Privacy policy</a>
                   </li>
                 </ul>
               </div>
@@ -1002,23 +1002,23 @@ const Users = ({ users }) => {
                 <ul>
                   <li>
                     <i className="bx bx-chevron-right" />{" "}
-                    <a href="">Web Design</a>
+                    <a href="/">Web Design</a>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right" />{" "}
-                    <a href="">Web Development</a>
+                    <a href="/">Web Development</a>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right" />{" "}
-                    <a href="">Product Management</a>
+                    <a href="/">Product Management</a>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right" />{" "}
-                    <a href="">Marketing</a>
+                    <a href="/">Marketing</a>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right" />{" "}
-                    <a href="">Graphic Design</a>
+                    <a href="/">Graphic Design</a>
                   </li>
                 </ul>
               </div>
@@ -1029,19 +1029,19 @@ const Users = ({ users }) => {
                   magna derita valies
                 </p>
                 <div className="social-links mt-3">
-                  <a href="" className="twitter">
+                  <a href="/" className="twitter">
                     <i className="bx bxl-twitter" />
                   </a>
-                  <a href="" className="facebook">
+                  <a href="/" className="facebook">
                     <i className="bx bxl-facebook" />
                   </a>
-                  <a href="" className="instagram">
+                  <a href="/" className="instagram">
                     <i className="bx bxl-instagram" />
                   </a>
-                  <a href="" className="google-plus">
+                  <a href="/" className="google-plus">
                     <i className="bx bxl-skype" />
                   </a>
-                  <a href="" className="linkedin">
+                  <a href="/" className="linkedin">
                     <i className="bx bxl-linkedin" />
                   </a>
                 </div>

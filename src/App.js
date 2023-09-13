@@ -6,15 +6,22 @@ import { Routes, Route } from "react-router-dom";
 
 import Users from "./components/users";
 import Appuser from "./components/usersexamplpe";
-
+import Contact from "./components/contact";
+import Demo from "./components/demo";
+import About from "./components/about";
+import Support from "./components/support";
+import Security from "./components/security";
 function App() {
   return (
     <div>
-      {/* Define your routes using the Routes component */}
       <Routes>
         <Route path="/" element={<Users />} />
         <Route path="/appuser" element={<Appuser />} />
-        {/* Add more routes as needed */}
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/demo" element={<Demo />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/support" element={<Support />} />
+        <Route path="/security" element={<Security />} />
       </Routes>
     </div>
   );

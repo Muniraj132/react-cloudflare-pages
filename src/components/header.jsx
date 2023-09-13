@@ -13,58 +13,57 @@ function Header() {
                   Home
                 </a>
               </li>
+              <li className="dropdown">
+                <a href="/">
+                  <span>Products</span> <i className="bi bi-chevron-down" />
+                </a>
+                <ul>
+                  <li>
+                    <a href="/">Cathedra</a>
+                  </li>
+                  <li>
+                    <a href="https://parish.cristoerp.com/" target="_blank">
+                      CristO
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://religio.cristoerp.com/" target="_blank">
+                      Religio
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">Charisma</a>
+                  </li>
+                </ul>
+              </li>
               <li>
-                <a className="nav-link scrollto" href="/appuser">
+                <a className="nav-link scrollto" href="/about">
                   About
                 </a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="/">
-                  Services
+                <a className="nav-link scrollto" href="/support">
+                  Support
                 </a>
               </li>
               <li>
-                <a className="nav-link   scrollto" href="/portfolio">
-                  Portfolio
+                <a className="nav-link   scrollto" href="/">
+                  Mobile App
                 </a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="/team">
-                  Team
+                <a className="nav-link scrollto" href="/security">
+                  Security
                 </a>
               </li>
-              <li className="dropdown">
-                <a href="/">
-                  <span>Drop Down</span> <i className="bi bi-chevron-down" />
-                </a>
-                <ul>
-                  <li>
-                    <a href="/">Drop Down 1</a>
-                  </li>
-                  <li className="dropdown">
-                    <a href="/">
-                      <span>Deep Drop Down</span>
-                      <i className="bi bi-chevron-right" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">Drop Down 2</a>
-                  </li>
-                  <li>
-                    <a href="/">Drop Down 3</a>
-                  </li>
-                  <li>
-                    <a href="/">Drop Down 4</a>
-                  </li>
-                </ul>
-              </li>
+
               <li>
                 <a className="nav-link scrollto" href="/contact">
                   Contact
                 </a>
               </li>
               <li>
-                <a className="getstarted scrollto" href="/about">
+                <a className="getstarted scrollto" href="/demo">
                   Get Started
                 </a>
               </li>

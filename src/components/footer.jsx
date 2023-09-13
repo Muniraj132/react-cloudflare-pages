@@ -97,7 +97,12 @@ function Footer() {
               <span>Cathedra</span>
             </strong>
             . All Rights Reserved Designed by{" "}
-            <a href="https://www.boscosofttech.com/">Boscosoft Technologies</a>
+            <a
+              href="https://www.boscosofttech.com/"
+              target="_blank"
+              rel="noopener noreferrer">
+              Boscosoft Technologies
+            </a>
           </div>
         </div>
       </footer>

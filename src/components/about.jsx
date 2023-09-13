@@ -58,7 +58,7 @@ function About() {
               <a
                 href="https://www.boscosofttech.com/about"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 className="btn-learn-more">
                 Learn More
               </a>

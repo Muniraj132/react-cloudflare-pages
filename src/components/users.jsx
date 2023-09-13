@@ -43,7 +43,7 @@ const Users = ({ users }) => {
         </div>
       </section>
       <main id="main">
-        <section id="about" className="about">
+        {/* <section id="about" className="about">
           <div className="container" data-aos="fade-up">
             <div className="section-title">
               <h2>About Us</h2>
@@ -83,7 +83,7 @@ const Users = ({ users }) => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section id="why-us" className="why-us section-bg">
           <div className="container-fluid" data-aos="fade-up">
             <div className="row">

@@ -1799,7 +1799,7 @@ section {
 }
 
 #footer .footer-bottom {
-  padding-top: 30px;
+  padding-top: 33px;
   padding-bottom: 30px;
   color: #fff;
 }
@@ -1832,4 +1832,16 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+}
+.learnmore:hover {
+  background-color: #209dd8 !important;
+  .learncontent {
+    color: white !important;
+  }
+}
+.footertag {
+  color: white;
+}
+#securitypage {
+  margin: 20px;
 }

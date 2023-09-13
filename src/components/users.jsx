@@ -1,103 +1,10 @@
+import React from "react";
+import Header from "./header";
+import Footer from "./footer";
 const Users = ({ users }) => {
   return (
     <>
-      <header id="header" className="fixed-top my-header">
-        <div className="container d-flex align-items-center">
-          <h1 className="logo me-auto">
-            <a href="https://react-cloudflare-pages-e3c.pages.dev/index.html">
-              Arsha
-            </a>
-          </h1>
-          {/* Uncomment below if you prefer to use an image logo */}
-          {/* <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>*/}
-          <nav id="navbar" className="navbar">
-            <ul>
-              <li>
-                <a
-                  className="nav-link scrollto active"
-                  href="https://react-cloudflare-pages-e3c.pages.dev/#hero">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a className="nav-link scrollto" href="/appuser">
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  className="nav-link scrollto"
-                  href="https://react-cloudflare-pages-e3c.pages.dev/#services">
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  className="nav-link   scrollto"
-                  href="https://react-cloudflare-pages-e3c.pages.dev/#portfolio">
-                  Portfolio
-                </a>
-              </li>
-              <li>
-                <a
-                  className="nav-link scrollto"
-                  href="https://react-cloudflare-pages-e3c.pages.dev/#team">
-                  Team
-                </a>
-              </li>
-              <li className="dropdown">
-                <a href="https://react-cloudflare-pages-e3c.pages.dev/">
-                  <span>Drop Down</span> <i className="bi bi-chevron-down" />
-                </a>
-                <ul>
-                  <li>
-                    <a href="https://react-cloudflare-pages-e3c.pages.dev/">
-                      Drop Down 1
-                    </a>
-                  </li>
-                  <li className="dropdown">
-                    <a href="https://react-cloudflare-pages-e3c.pages.dev/#">
-                      <span>Deep Drop Down</span>{" "}
-                      <i className="bi bi-chevron-right" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://react-cloudflare-pages-e3c.pages.dev/">
-                      Drop Down 2
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://react-cloudflare-pages-e3c.pages.dev/">
-                      Drop Down 3
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://react-cloudflare-pages-e3c.pages.dev/">
-                      Drop Down 4
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a
-                  className="nav-link scrollto"
-                  href="https://react-cloudflare-pages-e3c.pages.dev/#contact">
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a
-                  className="getstarted scrollto"
-                  href="https://react-cloudflare-pages-e3c.pages.dev/#about">
-                  Get Started
-                </a>
-              </li>
-            </ul>
-            <i className="bi bi-list mobile-nav-toggle" />
-          </nav>
-          {/* .navbar */}
-        </div>
-      </header>
+      <Header />
       <section id="hero" className="d-flex align-items-center">
         <div className="container">
           <div className="row">
@@ -105,14 +12,10 @@ const Users = ({ users }) => {
               className="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
               data-aos="fade-up"
               data-aos-delay={200}>
-              <h1>Better Solutions For Your Business</h1>
-              <h2>
-                We are team of talented designers making websites with Bootstrap
-              </h2>
+              <h1>Diocese Management Software</h1>
+              <h2>A powerful tool for pastoral planning and administration.</h2>
               <div className="d-flex justify-content-center justify-content-lg-start">
-                <a
-                  href="https://react-cloudflare-pages-e3c.pages.dev/#about"
-                  className="btn-get-started scrollto">
+                <a href="/" className="btn-get-started scrollto">
                   Get Started
                 </a>
                 <a
@@ -137,54 +40,6 @@ const Users = ({ users }) => {
         </div>
       </section>
       <main id="main">
-        <section id="clients" className="clients section-bg">
-          <div className="container">
-            <div className="row" data-aos="zoom-in">
-              <div className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                <img
-                  src="assets/img/clients/client-1.png"
-                  className="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                <img
-                  src="assets/img/clients/client-2.png"
-                  className="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                <img
-                  src="assets/img/clients/client-3.png"
-                  className="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                <img
-                  src="assets/img/clients/client-4.png"
-                  className="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                <img
-                  src="assets/img/clients/client-5.png"
-                  className="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                <img
-                  src="assets/img/clients/client-6.png"
-                  className="img-fluid"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </section>
         <section id="about" className="about">
           <div className="container" data-aos="fade-up">
             <div className="section-title">
@@ -938,130 +793,7 @@ const Users = ({ users }) => {
           </div>
         </section>
       </main>
-      <footer id="footer">
-        <div className="footer-newsletter">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-6">
-                <h4>Join Our Newsletter</h4>
-                <p>
-                  Tamen quem nulla quae legam multos aute sint culpa legam
-                  noster magna
-                </p>
-                <form action method="post">
-                  <input type="email" name="email" />
-                  <input type="submit" defaultValue="Subscribe" />
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="footer-top">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-3 col-md-6 footer-contact">
-                <h3>Arsha</h3>
-                <p>
-                  A108 Adam Street <br />
-                  New York, NY 535022
-                  <br />
-                  United States <br />
-                  <br />
-                  <strong>Phone:</strong> +1 5589 55488 55
-                  <br />
-                  <strong>Email:</strong> info@example.com
-                  <br />
-                </p>
-              </div>
-              <div className="col-lg-3 col-md-6 footer-links">
-                <h4>Useful Links</h4>
-                <ul>
-                  <li>
-                    <i className="bx bx-chevron-right" /> <a href="/">Home</a>
-                  </li>
-                  <li>
-                    <i className="bx bx-chevron-right" />{" "}
-                    <a href="/">About us</a>
-                  </li>
-                  <li>
-                    <i className="bx bx-chevron-right" />{" "}
-                    <a href="/">Services</a>
-                  </li>
-                  <li>
-                    <i className="bx bx-chevron-right" />{" "}
-                    <a href="/">Terms of service</a>
-                  </li>
-                  <li>
-                    <i className="bx bx-chevron-right" />{" "}
-                    <a href="/">Privacy policy</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-lg-3 col-md-6 footer-links">
-                <h4>Our Services</h4>
-                <ul>
-                  <li>
-                    <i className="bx bx-chevron-right" />{" "}
-                    <a href="/">Web Design</a>
-                  </li>
-                  <li>
-                    <i className="bx bx-chevron-right" />{" "}
-                    <a href="/">Web Development</a>
-                  </li>
-                  <li>
-                    <i className="bx bx-chevron-right" />{" "}
-                    <a href="/">Product Management</a>
-                  </li>
-                  <li>
-                    <i className="bx bx-chevron-right" />{" "}
-                    <a href="/">Marketing</a>
-                  </li>
-                  <li>
-                    <i className="bx bx-chevron-right" />{" "}
-                    <a href="/">Graphic Design</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-lg-3 col-md-6 footer-links">
-                <h4>Our Social Networks</h4>
-                <p>
-                  Cras fermentum odio eu feugiat lide par naso tierra videa
-                  magna derita valies
-                </p>
-                <div className="social-links mt-3">
-                  <a href="/" className="twitter">
-                    <i className="bx bxl-twitter" />
-                  </a>
-                  <a href="/" className="facebook">
-                    <i className="bx bxl-facebook" />
-                  </a>
-                  <a href="/" className="instagram">
-                    <i className="bx bxl-instagram" />
-                  </a>
-                  <a href="/" className="google-plus">
-                    <i className="bx bxl-skype" />
-                  </a>
-                  <a href="/" className="linkedin">
-                    <i className="bx bxl-linkedin" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container footer-bottom clearfix">
-          <div className="copyright">
-            © Copyright{" "}
-            <strong>
-              <span>Arsha</span>
-            </strong>
-            . All Rights Reserved
-          </div>
-          <div className="credits">
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 };

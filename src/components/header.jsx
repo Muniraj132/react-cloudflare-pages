@@ -22,12 +22,18 @@ function Header() {
                     <a href="/">Cathedra</a>
                   </li>
                   <li>
-                    <a href="https://parish.cristoerp.com/" target="_blank">
+                    <a
+                      href="https://parish.cristoerp.com/"
+                      target="_blank"
+                      rel="noopener">
                       CristO
                     </a>
                   </li>
                   <li>
-                    <a href="https://religio.cristoerp.com/" target="_blank">
+                    <a
+                      href="https://religio.cristoerp.com/"
+                      target="_blank"
+                      rel="noopener">
                       Religio
                     </a>
                   </li>

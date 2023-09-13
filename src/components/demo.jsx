@@ -24,11 +24,7 @@ function Demo() {
           </div>
           <div className="row">
             <div className="col-lg-5 d-flex align-items-stretch">
-              <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
-                className="php-email-form">
+              <form className="php-email-form">
                 <div className="form-group">
                   <label htmlFor="name">Your Name</label>
                   <input

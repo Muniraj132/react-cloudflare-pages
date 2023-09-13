@@ -43,6 +43,7 @@ function Contact() {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15575.764257833738!2d78.61428245477639!3d12.586135910511421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3badaaea950786f3%3A0x5f3b489cca9a30a2!2sBosco%20Soft%20Technologies%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1694600412664!5m2!1sen!2sin"
                   style={{ border: 0, width: "100%", height: "290px" }}
                   allowfullscreen=""
+                  title="boscosoft"
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>

@@ -25,7 +25,7 @@ function Header() {
                     <a
                       href="https://parish.cristoerp.com/"
                       target="_blank"
-                      rel="noopener">
+                      rel="noopener noreferrer">
                       CristO
                     </a>
                   </li>
@@ -33,7 +33,7 @@ function Header() {
                     <a
                       href="https://religio.cristoerp.com/"
                       target="_blank"
-                      rel="noopener">
+                      rel="noopener noreferrer">
                       Religio
                     </a>
                   </li>

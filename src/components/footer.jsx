@@ -1,24 +1,8 @@
 function Footer() {
-  const listStyle = {
-    display: "flex",
-    listStyleType: "none",
-    padding: 0,
-    textAlign: "center",
-    marginLeft: "231px",
-    color: "white",
-  };
   const listItemStyle = {
     marginRight: "40px",
   };
-  const listiconStyle = {
-    display: "flex",
-    listStyleType: "none",
-    padding: 0,
-    textAlign: "center",
-    marginLeft: "24rem",
-    color: "white",
-    marginTop: "27px",
-  };
+
   const listIconStyle = {
     marginRight: "20px",
   };

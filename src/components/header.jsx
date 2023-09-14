@@ -19,18 +19,6 @@ function Header() {
     }
   };
 
-  // Function to handle scroll-to links
-  const handleScrollTo = (hash) => {
-    if (isNavbarMobile) {
-      setIsNavbarMobile(false);
-    }
-    // Implement your scroll-to logic here, e.g., using the `hash` variable
-    // For simplicity, let's assume it's a smooth scroll
-    document.querySelector(hash).scrollIntoView({
-      behavior: "smooth",
-    });
-  };
-
   // Event listener for clicking on dropdown links
   const handleDropdownLinks = (e) => {
     if (isNavbarMobile) {

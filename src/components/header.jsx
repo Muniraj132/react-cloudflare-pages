@@ -17,16 +17,6 @@ function Header() {
     }
   };
 
-  const handleScrollTo = (hash) => {
-    if (isNavbarMobile) {
-      setIsNavbarMobile(false);
-    }
-
-    document.querySelector(hash).scrollIntoView({
-      behavior: "smooth",
-    });
-  };
-
   const handleDropdownLinks = (e) => {
     if (isNavbarMobile) {
       const dropdownToggle = e.target.closest(".dropdown > a");
@@ -41,11 +31,14 @@ function Header() {
   };
 
   useEffect(() => {
+    // Add event listener for clicking on dropdown links
     document.addEventListener("click", handleDropdownLinks);
 
+    // Cleanup the event listener when the component unmounts
     return () => {
       document.removeEventListener("click", handleDropdownLinks);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isNavbarMobile]);
 
   return (

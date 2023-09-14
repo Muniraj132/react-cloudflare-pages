@@ -1832,6 +1832,26 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+  .footerab {
+    margin-left: 0px !important;
+  }
+  .iconsul {
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    text-align: center;
+    margin-left: 0px !important;
+    color: white;
+    margin-top: 27px;
+  }
+  .listStylefooter {
+    display: block !important;
+    list-style-type: none;
+    padding: 0px;
+    text-align: center;
+    margin-left: 0px !important;
+    color: white;
+  }
 }
 .learnmore:hover {
   background-color: #209dd8 !important;
@@ -1844,4 +1864,25 @@ section {
 }
 #securitypage {
   margin: 20px;
+}
+.footerab {
+  margin-left: 17rem;
+}
+
+.iconsul {
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+  text-align: center;
+  margin-left: 24rem;
+  color: white;
+  margin-top: 27px;
+}
+.listStylefooter {
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+  text-align: center;
+  margin-left: 231px;
+  color: white;
 }

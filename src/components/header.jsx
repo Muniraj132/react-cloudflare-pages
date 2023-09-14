@@ -3,12 +3,10 @@ import React, { useState, useEffect } from "react";
 function Header() {
   const [isNavbarMobile, setIsNavbarMobile] = useState(false);
 
-  // Function to toggle the mobile navigation menu
   const toggleMobileNav = () => {
     setIsNavbarMobile(!isNavbarMobile);
   };
 
-  // Function to handle click events on dropdown links
   const handleDropdownClick = (e) => {
     if (isNavbarMobile) {
       e.preventDefault();
@@ -19,7 +17,16 @@ function Header() {
     }
   };
 
-  // Event listener for clicking on dropdown links
+  const handleScrollTo = (hash) => {
+    if (isNavbarMobile) {
+      setIsNavbarMobile(false);
+    }
+
+    document.querySelector(hash).scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   const handleDropdownLinks = (e) => {
     if (isNavbarMobile) {
       const dropdownToggle = e.target.closest(".dropdown > a");
@@ -33,12 +40,9 @@ function Header() {
     }
   };
 
-  // Use useEffect to add and remove event listeners when the component mounts and unmounts
   useEffect(() => {
-    // Add event listener for clicking on dropdown links
     document.addEventListener("click", handleDropdownLinks);
 
-    // Cleanup the event listener when the component unmounts
     return () => {
       document.removeEventListener("click", handleDropdownLinks);
     };
@@ -51,7 +55,6 @@ function Header() {
           <h1 className="logo me-auto">
             <a href="/">Cathedra</a>
           </h1>
-
           <nav
             id="navbar"
             className={`navbar ${isNavbarMobile ? "navbar-mobile" : ""}`}>

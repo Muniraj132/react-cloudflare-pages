@@ -26,7 +26,7 @@ function Footer() {
     <>
       <footer id="footer">
         <div className="container footer-bottom clearfix">
-          <ul style={listStyle}>
+          <ul className="listStylefooter">
             <li style={listItemStyle}>
               <a className="footertag" href="/">
                 Home
@@ -63,7 +63,7 @@ function Footer() {
               </a>
             </li>
           </ul>
-          <ul style={listiconStyle}>
+          <ul className="iconsul">
             <li style={listIconStyle}>
               <a href="/" className="twitter footertag">
                 <i className="bx bxl-twitter" style={{ fontSize: "20px" }} />
@@ -91,7 +91,7 @@ function Footer() {
             </li>
           </ul>
 
-          <div style={{ marginLeft: "17rem" }}>
+          <div className="footerab">
             © Copyright{" "}
             <strong>
               <span>Cathedra</span>

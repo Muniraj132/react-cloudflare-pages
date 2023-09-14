@@ -1,4 +1,61 @@
+import React, { useState, useEffect } from "react";
+
 function Header() {
+  const [isNavbarMobile, setIsNavbarMobile] = useState(false);
+
+  // Function to toggle the mobile navigation menu
+  const toggleMobileNav = () => {
+    setIsNavbarMobile(!isNavbarMobile);
+  };
+
+  // Function to handle click events on dropdown links
+  const handleDropdownClick = (e) => {
+    if (isNavbarMobile) {
+      e.preventDefault();
+      const dropdownContent = e.target.nextElementSibling;
+      if (dropdownContent) {
+        dropdownContent.classList.toggle("dropdown-active");
+      }
+    }
+  };
+
+  // Function to handle scroll-to links
+  const handleScrollTo = (hash) => {
+    if (isNavbarMobile) {
+      setIsNavbarMobile(false);
+    }
+    // Implement your scroll-to logic here, e.g., using the `hash` variable
+    // For simplicity, let's assume it's a smooth scroll
+    document.querySelector(hash).scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  // Event listener for clicking on dropdown links
+  const handleDropdownLinks = (e) => {
+    if (isNavbarMobile) {
+      const dropdownToggle = e.target.closest(".dropdown > a");
+      if (dropdownToggle) {
+        e.preventDefault();
+        const dropdownContent = dropdownToggle.nextElementSibling;
+        if (dropdownContent) {
+          dropdownContent.classList.toggle("dropdown-active");
+        }
+      }
+    }
+  };
+
+  // Use useEffect to add and remove event listeners when the component mounts and unmounts
+  useEffect(() => {
+    // Add event listener for clicking on dropdown links
+    document.addEventListener("click", handleDropdownLinks);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      document.removeEventListener("click", handleDropdownLinks);
+    };
+  }, [isNavbarMobile]);
+
   return (
     <>
       <header id="header" className="fixed-top my-header">
@@ -6,7 +63,10 @@ function Header() {
           <h1 className="logo me-auto">
             <a href="/">Cathedra</a>
           </h1>
-          <nav id="navbar" className="navbar">
+
+          <nav
+            id="navbar"
+            className={`navbar ${isNavbarMobile ? "navbar-mobile" : ""}`}>
             <ul>
               <li>
                 <a className="nav-link scrollto active" href="/">
@@ -14,7 +74,7 @@ function Header() {
                 </a>
               </li>
               <li className="dropdown">
-                <a href="/">
+                <a href="/" onClick={handleDropdownClick}>
                   <span>Products</span> <i className="bi bi-chevron-down" />
                 </a>
                 <ul>
@@ -53,7 +113,7 @@ function Header() {
                 </a>
               </li>
               <li>
-                <a className="nav-link   scrollto" href="/">
+                <a className="nav-link scrollto" href="/">
                   Mobile App
                 </a>
               </li>
@@ -62,7 +122,6 @@ function Header() {
                   Security
                 </a>
               </li>
-
               <li>
                 <a className="nav-link scrollto" href="/contact">
                   Contact
@@ -74,7 +133,12 @@ function Header() {
                 </a>
               </li>
             </ul>
-            <i className="bi bi-list mobile-nav-toggle" />
+            <i
+              className={`bi mobile-nav-toggle ${
+                isNavbarMobile ? "bi-x" : "bi-list"
+              }`}
+              onClick={toggleMobileNav}
+            />
           </nav>
         </div>
       </header>

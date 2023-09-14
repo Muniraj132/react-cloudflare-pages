@@ -22,7 +22,9 @@ const Users = ({ users }) => {
                   Get Started
                 </a>
                 <a
-                  href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
+                  href="https://www.youtube.com/watch?v=t_ur2F0BBvA"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="glightbox btn-watch-video">
                   <i className="bi bi-play-circle" />
                   <span>Watch Video</span>
@@ -103,7 +105,7 @@ const Users = ({ users }) => {
                     Send Circular to all members
                   </li>
                 </ul>
-                <a href="/" className="btn-learn-more">
+                <a href="/benefits" className="btn-learn-more">
                   Learn More
                 </a>
               </div>

@@ -11,6 +11,8 @@ import Demo from "./components/demo";
 import About from "./components/about";
 import Support from "./components/support";
 import Security from "./components/security";
+import Benefits from "./components/benefits";
+
 function App() {
   return (
     <div>
@@ -22,6 +24,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/support" element={<Support />} />
         <Route path="/security" element={<Security />} />
+        <Route path="/benefits" element={<Benefits />} />
       </Routes>
     </div>
   );

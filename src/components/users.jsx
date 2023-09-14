@@ -103,7 +103,7 @@ const Users = ({ users }) => {
                     Send Circular to all members
                   </li>
                 </ul>
-                <a href="#" className="btn-learn-more">
+                <a href="/" className="btn-learn-more">
                   Learn More
                 </a>
               </div>
@@ -176,7 +176,7 @@ const Users = ({ users }) => {
                     Store and manage contacts. Such as Name, Mobile, Email of
                     the Members information
                   </p>
-                  <a href="">Learn more</a>
+                  <a href="/">Learn more</a>
                 </div>
               </div>
               <div

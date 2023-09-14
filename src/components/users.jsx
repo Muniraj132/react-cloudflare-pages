@@ -43,117 +43,85 @@ const Users = ({ users }) => {
         </div>
       </section>
       <main id="main">
-        <section id="why-us" className="why-us section-bg">
-          <div className="container-fluid" data-aos="fade-up">
-            <div className="row">
-              <div className="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-                <div className="content">
-                  <h3>
-                    Do More with One Solution{" "}
-                    <strong>
-                      Preparing you for the future, focusing on evangelizing and
-                      growing your Diocese
-                    </strong>
-                  </h3>
-                  <p>
-                    The scope of the application is to maintain the Families,
-                    Members, Sacraments, BCC, Commission, Association, Prayer
-                    Request, Donation and Subscription details of the Diocese.
-                  </p>
-                </div>
-                <div className="accordion-list">
-                  <ul>
-                    <li>
-                      <a
-                        data-bs-toggle="collapse"
-                        href="/"
-                        className="collapse"
-                        data-bs-target="#accordion-list-1">
-                        <span>01</span> Community - Where you belong and thrive
-                        <i className="bx bx-chevron-down icon-show" />
-                        <i className="bx bx-chevron-up icon-close" />
-                      </a>
-                      <div
-                        id="accordion-list-1"
-                        className="collapse show"
-                        data-bs-parent=".accordion-list">
-                        <p>
-                          Store all the community members records and Renew all
-                          the documents.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <a
-                        data-bs-toggle="collapse"
-                        href="/"
-                        data-bs-target="#accordion-list-2"
-                        className="collapsed">
-                        <span>02</span> Members - Quickly Look Up People{" "}
-                        <i className="bx bx-chevron-down icon-show" />
-                        <i className="bx bx-chevron-up icon-close" />
-                      </a>
-                      <div
-                        id="accordion-list-2"
-                        className="collapse"
-                        data-bs-parent=".accordion-list">
-                        <p>
-                          Store and manage comprehensive member profiles,
-                          including details education, sacraments.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <a
-                        href="/"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#accordion-list-3"
-                        className="collapsed">
-                        <span>03</span> Contacts - Keep your contacts up to date
-                        <i className="bx bx-chevron-down icon-show" />
-                        <i className="bx bx-chevron-up icon-close" />
-                      </a>
-                      <div
-                        id="accordion-list-3"
-                        className="collapse"
-                        data-bs-parent=".accordion-list">
-                        <p>
-                          Store and manage contacts. Such as Name, Mobile, Email
-                          of the Members information
-                        </p>
-                      </div>
-                    </li>
-                    <li className="learnmore">
-                      <a
-                        data-bs-toggle="collapse"
-                        href="/"
-                        className="collapsed text-center learncontent">
-                        Learn More
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+        <section id="about" className="about">
+          <div className="container" data-aos="fade-up">
+            <div className="section-title">
+              <h2>Benefits For The User</h2>
+            </div>
+            <div className="row content">
+              <div className="col-lg-6">
+                <p>
+                  Your prosperity is at the core of our passion, and we are here
+                  to help you discover a world of personalized advantages that
+                  cater to your unique needs and aspirations. Join us in this
+                  exciting journey of growth and fulfillment, where your success
+                  is our ultimate goal
+                </p>
+                <ul>
+                  <li>
+                    <i className="ri-check-double-line" /> Single source for all
+                    member, institution details and communication
+                  </li>
+                  <li>
+                    <i className="ri-check-double-line" />
+                    Create & Maintain Member Profile (Education, Sacraments,
+                    Profession, Formation, Holy Order etc…)
+                  </li>
+                  <li>
+                    <i className="ri-check-double-line" />
+                    Member profile with more than 170 data points that can be
+                    viewed online or downloaded in PDF/Excel
+                  </li>
+                </ul>
               </div>
-              <div
-                className="col-lg-5 align-items-stretch order-1 order-lg-2 img"
-                style={{ backgroundImage: 'url("assets/img/why-us.png")' }}
-                data-aos="zoom-in"
-                data-aos-delay={150}>
-                &nbsp;
+              <div className="col-lg-6 pt-4 pt-lg-0">
+                <ul>
+                  <li>
+                    <i className="ri-check-double-line" />
+                    Communicate thru email, SMS to the Members, Communities and
+                    Intuitions and maintain records
+                  </li>
+                  <li>
+                    <i className="ri-check-double-line" />
+                    Send Greetings on Birthdays & on all special Anniversaries
+                    days such as Ordination, feast days
+                  </li>
+                  <li>
+                    <i className="ri-check-double-line" />
+                    Create & Maintain Calendar events
+                  </li>
+                  <li>
+                    <i className="ri-check-double-line" />
+                    View Personal and Public Calendar events
+                  </li>
+                  <li>
+                    <i className="ri-check-double-line" />
+                    Add Photos and Attachments
+                  </li>
+                  <li>
+                    <i className="ri-check-double-line" />
+                    Send Circular to all members
+                  </li>
+                </ul>
+                <a href="#" className="btn-learn-more">
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
         </section>
-
         <section id="services" className="services section-bg">
           <div className="container" data-aos="fade-up">
             <div className="section-title">
-              <h2>Services</h2>
+              <h2>Features</h2>
               <p>
-                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                Quia fugiat sit in iste officiis commodi quidem hic quas.
+                "Do More with One Solution: Our application modules are designed
+                to streamline your workflow, simplify tasks, and enhance
+                productivity. With our comprehensive suite, you can effortlessly
+                manage all your needs in a single, user-friendly platform.
+                Experience the power of efficiency, convenience, and innovation
+                as you unlock the full potential of our modules. Embrace a
+                seamless experience tailored to your success."
               </p>
             </div>
             <div className="row">
@@ -163,15 +131,16 @@ const Users = ({ users }) => {
                 data-aos-delay={100}>
                 <div className="icon-box">
                   <div className="icon">
-                    <i className="bx bxl-dribbble" />
+                    <i className="bx bx-group" />
                   </div>
                   <h4>
-                    <a href>Lorem Ipsum</a>
+                    <a href>Community</a>
                   </h4>
                   <p>
-                    Voluptatum deleniti atque corrupti quos dolores et quas
-                    molestias excepturi
+                    Store all the community members records and Renew all the
+                    documents.
                   </p>
+                  <a href="">Learn more</a>
                 </div>
               </div>
               <div
@@ -180,15 +149,16 @@ const Users = ({ users }) => {
                 data-aos-delay={200}>
                 <div className="icon-box">
                   <div className="icon">
-                    <i className="bx bx-file" />
+                    <i className="bx bx-user" />
                   </div>
                   <h4>
-                    <a href="/">Sed ut perspici</a>
+                    <a href="/">Member Profile</a>
                   </h4>
                   <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore
+                    Store and manage comprehensive member profiles, including
+                    details education, sacraments.
                   </p>
+                  <a href="">Learn more</a>
                 </div>
               </div>
               <div
@@ -197,15 +167,16 @@ const Users = ({ users }) => {
                 data-aos-delay={300}>
                 <div className="icon-box">
                   <div className="icon">
-                    <i className="bx bx-tachometer" />
+                    <i className="bx bxs-contact" />
                   </div>
                   <h4>
-                    <a href="/">Magni Dolores</a>
+                    <a href="/">Contacts</a>
                   </h4>
                   <p>
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia
+                    Store and manage contacts. Such as Name, Mobile, Email of
+                    the Members information
                   </p>
+                  <a href="">Learn more</a>
                 </div>
               </div>
               <div
@@ -214,15 +185,16 @@ const Users = ({ users }) => {
                 data-aos-delay={400}>
                 <div className="icon-box">
                   <div className="icon">
-                    <i className="bx bx-layer" />
+                    <i className="bx bx-calendar-event" />
                   </div>
                   <h4>
-                    <a href="/">Nemo Enim</a>
+                    <a href="/">Calendar</a>
                   </h4>
                   <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis
+                    Store & Maintain Calendar events, Can set Reminders via
+                    Emails and Application.
                   </p>
+                  <a href="">Learn more</a>
                 </div>
               </div>
             </div>
@@ -248,7 +220,25 @@ const Users = ({ users }) => {
             </div>
           </div>
         </section>
-
+        <section id="about" className="about">
+          <div className="container" data-aos="fade-up">
+            <div className="section-title">
+              <h2>Why Cathedra ?</h2>
+            </div>
+            <div className="row content">
+              <p style={{ margin: "20px" }}>
+                This is a user-friendly software tool for the diocese,
+                institute, heads and for all diocese members - to manage all
+                communications (circular, email, meetings), create records
+                (chronicles, concerns), maintain member critical and personal
+                information, assignments, history, institution/community
+                information, planning, reporting, and archiving. CristO
+                addresses five segments of major users: Bishop, Bishop
+                Secretary, Chancellor, Vicar General
+              </p>
+            </div>
+          </div>
+        </section>
         <section id="skills" className="skills">
           <div className="container" data-aos="fade-up">
             <div className="row">

@@ -3,15 +3,12 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import Header from "./header";
 import Footer from "./footer";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Demo() {
   const {
     register,
     handleSubmit,
-    reset,
-    setValue,
-    watch,
     formState: { errors },
   } = useForm({ mode: "onChange" });
   const maxValue = 10;

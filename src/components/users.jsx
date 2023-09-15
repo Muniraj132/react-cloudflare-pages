@@ -18,7 +18,7 @@ const Users = ({ users }) => {
               <h1>Diocese Management Software</h1>
               <h2>A powerful tool for pastoral planning and administration.</h2>
               <div className="d-flex justify-content-center justify-content-lg-start">
-                <a href="/" className="btn-get-started scrollto">
+                <a href="/demo" className="btn-get-started scrollto">
                   Get Started
                 </a>
                 <a

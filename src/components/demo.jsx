@@ -1,7 +1,42 @@
+import { useForm } from "react-hook-form";
+import axios from "axios";
+import Swal from "sweetalert2";
 import Header from "./header";
 import Footer from "./footer";
+import { Link, useNavigate } from "react-router-dom";
 
 function Demo() {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    setValue,
+    watch,
+    formState: { errors },
+  } = useForm({ mode: "onChange" });
+  const maxValue = 10;
+  const navigate = useNavigate();
+  function onSubmitdemoform(data, e) {
+    console.log(data);
+    axios
+      .post(`https://religioapp.cristoerp.com/api/store-demo/data`, data)
+      .then((Response) => {
+        console.log(Response);
+        if (Response.status === 200) {
+          Swal.fire("Submited Successfully..!", "", "success");
+          e.target.reset();
+          navigate("/demo");
+        }
+      })
+      .catch((err) => {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong!",
+          footer: err.message,
+        });
+      });
+  }
   return (
     <>
       <Header />
@@ -24,7 +59,9 @@ function Demo() {
           </div>
           <div className="row">
             <div className="col-lg-5 d-flex align-items-stretch">
-              <form className="php-email-form">
+              <form
+                className="php-email-form"
+                onSubmit={handleSubmit(onSubmitdemoform)}>
                 <div className="form-group">
                   <label htmlFor="name">Your Name</label>
                   <input
@@ -32,8 +69,14 @@ function Demo() {
                     name="name"
                     className="form-control"
                     id="name"
-                    required
+                    {...register("name", { required: true })}
+                    aria-invalid={errors?.name ? "true" : "false"}
                   />
+                  {errors?.name?.type === "required" && (
+                    <div className="text-danger text_error">
+                      <label className="errlabel">Name is required</label>
+                    </div>
+                  )}
                 </div>
                 <div className="form-group">
                   <label htmlFor="name">Your Email</label>
@@ -42,19 +85,32 @@ function Demo() {
                     className="form-control"
                     name="email"
                     id="email"
-                    required
+                    {...register("email", { required: true })}
+                    aria-invalid={errors?.email ? "true" : "false"}
                   />
+                  {errors?.email?.type === "required" && (
+                    <div className="text-danger text_error">
+                      <label className="errlabel">Email is required</label>
+                    </div>
+                  )}
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="name">Subject</label>
+                  <label htmlFor="name">Your Mobile</label>
                   <input
                     type="text"
                     className="form-control"
-                    name="subject"
-                    id="subject"
-                    required
+                    name="mobile"
+                    max={maxValue}
+                    id="mobile"
+                    {...register("mobile", { required: true })}
+                    aria-invalid={errors?.mobile ? "true" : "false"}
                   />
+                  {errors?.mobile?.type === "required" && (
+                    <div className="text-danger text_error">
+                      <label className="errlabel">Mobile is required</label>
+                    </div>
+                  )}
                 </div>
                 <div className="my-3">
                   <div className="loading">Loading</div>

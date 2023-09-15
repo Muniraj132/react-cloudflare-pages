@@ -1852,6 +1852,13 @@ section {
     margin-left: 0px !important;
     color: white;
   }
+  #startul {
+    width: 23rem !important;
+    left: 14px !important;
+  }
+  .dropdown .row {
+    flex-direction: column;
+  }
 }
 .learnmore:hover {
   background-color: #209dd8 !important;
@@ -1885,4 +1892,28 @@ section {
   text-align: center;
   margin-left: 231px;
   color: white;
+}
+#startul {
+  width: 45rem;
+  left: -7rem;
+}
+.icons {
+  margin-bottom: 11px;
+  text-align: center;
+}
+.img-module {
+  height: 100px;
+}
+.c-btn {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #37517e;
+  color: #37517e;
 }

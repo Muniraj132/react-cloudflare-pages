@@ -12,6 +12,7 @@ import About from "./components/about";
 import Support from "./components/support";
 import Security from "./components/security";
 import Benefits from "./components/benefits";
+import Dashboard from "./components/modules/dashboard";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/support" element={<Support />} />
         <Route path="/security" element={<Security />} />
         <Route path="/benefits" element={<Benefits />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </div>
   );

@@ -136,13 +136,13 @@ const Users = ({ users }) => {
                     <i className="bx bx-group" />
                   </div>
                   <h4>
-                    <a href>Community</a>
+                    <a href="/community">Community</a>
                   </h4>
                   <p>
                     Store all the community members records and Renew all the
                     documents.
                   </p>
-                  <a href="/">Learn more</a>
+                  <a href="/community">Learn more</a>
                 </div>
               </div>
               <div
@@ -154,13 +154,13 @@ const Users = ({ users }) => {
                     <i className="bx bx-user" />
                   </div>
                   <h4>
-                    <a href="/">Member Profile</a>
+                    <a href="/members">Member Profile</a>
                   </h4>
                   <p>
                     Store and manage comprehensive member profiles, including
                     details education, sacraments.
                   </p>
-                  <a href="/">Learn more</a>
+                  <a href="/members">Learn more</a>
                 </div>
               </div>
               <div
@@ -172,13 +172,13 @@ const Users = ({ users }) => {
                     <i className="bx bxs-contact" />
                   </div>
                   <h4>
-                    <a href="/">Contacts</a>
+                    <a href="/contacts">Contacts</a>
                   </h4>
                   <p>
                     Store and manage contacts. Such as Name, Mobile, Email of
                     the Members information
                   </p>
-                  <a href="/">Learn more</a>
+                  <a href="/contacts">Learn more</a>
                 </div>
               </div>
               <div
@@ -190,13 +190,13 @@ const Users = ({ users }) => {
                     <i className="bx bx-calendar-event" />
                   </div>
                   <h4>
-                    <a href="/">Calendar</a>
+                    <a href="/calendar">Calendar</a>
                   </h4>
                   <p>
                     Store & Maintain Calendar events, Can set Reminders via
                     Emails and Application.
                   </p>
-                  <a href="/">Learn more</a>
+                  <a href="/calendar">Learn more</a>
                 </div>
               </div>
             </div>

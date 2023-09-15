@@ -228,7 +228,8 @@ h6 {
 }
 
 .navbar .dropdown ul a {
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
+  padding: 10px 73px 2px 25px;
   font-size: 14px;
   text-transform: none;
   font-weight: 500;
@@ -1916,4 +1917,7 @@ section {
   margin: 10px;
   border: 2px solid #37517e;
   color: #37517e;
+}
+.logoimg {
+  height: 40px;
 }

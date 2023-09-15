@@ -63,13 +63,26 @@ function Header() {
                 </a>
                 <ul>
                   <li>
-                    <a href="/">Cathedra</a>
+                    <a href="/">
+                      {" "}
+                      <img
+                        src="assets/img/moules/cathedra.png"
+                        className="logoimg"
+                        alt="cathedra"
+                      />
+                      Cathedra
+                    </a>
                   </li>
                   <li>
                     <a
                       href="https://parish.cristoerp.com/"
                       target="_blank"
                       rel="noopener noreferrer">
+                      <img
+                        src="assets/img/moules/parishimg.png"
+                        className="logoimg"
+                        alt="cathedra"
+                      />
                       CristO
                     </a>
                   </li>
@@ -78,11 +91,23 @@ function Header() {
                       href="https://religio.cristoerp.com/"
                       target="_blank"
                       rel="noopener noreferrer">
+                      <img
+                        src="assets/img/moules/religioimg.png"
+                        className="logoimg"
+                        alt="cathedra"
+                      />
                       Religio
                     </a>
                   </li>
                   <li>
-                    <a href="/">Charisma</a>
+                    <a href="/">
+                      <img
+                        src="assets/img/moules/charisma.png"
+                        className="logoimg"
+                        alt="cathedra"
+                      />
+                      Charisma
+                    </a>
                   </li>
                 </ul>
               </li>

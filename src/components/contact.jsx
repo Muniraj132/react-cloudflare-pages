@@ -1,7 +1,37 @@
 import Header from "./header";
 import Footer from "./footer";
-
+import { useForm } from "react-hook-form";
+import axios from "axios";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 function Contact() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({ mode: "onChange" });
+
+  const navigate = useNavigate();
+  function onSubmitcontactform(data, e) {
+    axios
+      .post(`https://religioapp.cristoerp.com/api/store-contact/data`, data)
+      .then((Response) => {
+        console.log(Response);
+        if (Response.status === 200) {
+          Swal.fire("Submited Successfully..!", "", "success");
+          e.target.reset();
+          navigate("/contact");
+        }
+      })
+      .catch((err) => {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong!",
+          footer: err.message,
+        });
+      });
+  }
   return (
     <>
       <Header />
@@ -49,7 +79,9 @@ function Contact() {
               </div>
             </div>
             <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-              <form className="php-email-form">
+              <form
+                className="php-email-form"
+                onSubmit={handleSubmit(onSubmitcontactform)}>
                 <div className="row">
                   <div className="form-group col-md-6">
                     <label htmlFor="name">Your Name</label>
@@ -58,8 +90,14 @@ function Contact() {
                       name="name"
                       className="form-control"
                       id="name"
-                      required
+                      {...register("name", { required: true })}
+                      aria-invalid={errors?.name ? "true" : "false"}
                     />
+                    {errors?.name?.type === "required" && (
+                      <div className="text-danger text_error">
+                        <label className="errlabel">Name is required</label>
+                      </div>
+                    )}
                   </div>
                   <div className="form-group col-md-6">
                     <label htmlFor="name">Your Email</label>
@@ -68,29 +106,47 @@ function Contact() {
                       className="form-control"
                       name="email"
                       id="email"
-                      required
+                      {...register("email", { required: true })}
+                      aria-invalid={errors?.email ? "true" : "false"}
                     />
+                    {errors?.email?.type === "required" && (
+                      <div className="text-danger text_error">
+                        <label className="errlabel">Email is required</label>
+                      </div>
+                    )}
                   </div>
                 </div>
                 <div className="form-group">
-                  <label htmlFor="name">Subject</label>
+                  <label htmlFor="name">Your Mobile</label>
                   <input
                     type="text"
                     className="form-control"
-                    name="subject"
-                    id="subject"
-                    required
+                    name="mobile"
+                    id="mobile"
+                    {...register("mobile", { required: true })}
+                    aria-invalid={errors?.mobile ? "true" : "false"}
                   />
+                  {errors?.mobile?.type === "required" && (
+                    <div className="text-danger text_error">
+                      <label className="errlabel">Mobile is required</label>
+                    </div>
+                  )}
                 </div>
                 <div className="form-group">
                   <label htmlFor="name">Message</label>
                   <textarea
                     className="form-control"
-                    name="message"
+                    name="subject"
                     rows={10}
-                    required
                     defaultValue={""}
+                    {...register("subject", { required: true })}
+                    aria-invalid={errors?.subject ? "true" : "false"}
                   />
+                  {errors?.subject?.type === "required" && (
+                    <div className="text-danger text_error">
+                      <label className="errlabel">Message is required</label>
+                    </div>
+                  )}
                 </div>
                 <div className="my-3">
                   <div className="loading">Loading</div>
